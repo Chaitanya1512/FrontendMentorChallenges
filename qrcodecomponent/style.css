@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
@@ -18,19 +18,22 @@ body {
 .container {
   padding: 10px;
   background-color: hsl(0, 0%, 100%);
-  width: 300px;
+  max-width: 300px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 3px 20px 12px 0px rgb(0 0 0 / 4%);
+  margin: 0.938rem;
 }
 
 img {
-  width: 290px;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
   border-radius: 15px;
   padding: 5px;
 }
 
-h2 {
+h1 {
   color: hsl(218, 44%, 22%);
   padding: 12px;
   font-weight: 700;
